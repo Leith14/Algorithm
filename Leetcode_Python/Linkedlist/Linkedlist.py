@@ -7,7 +7,6 @@ from collections import deque
 
 class Test:
     def test(self):
-
         # create linkedlist
         linkedlist = deque()
 
@@ -19,7 +18,7 @@ class Test:
         print(linkedlist)
 
         # insert element time complexity:O(N)
-        linkedlist.insert(2,99)
+        linkedlist.insert(2, 99)
         print(linkedlist)
 
         # Access element
@@ -35,12 +34,12 @@ class Test:
 
         # update element
         # time complexity: O(N)
-        linkedlist[2]=88
+        linkedlist[2] = 88
         print(linkedlist)
 
         # remove element
         # time complexity O(N)
-        #del linkedlist[2]
+        # del linkedlist[2]
         linkedlist.remove(88)
         print(linkedlist)
 
@@ -48,7 +47,6 @@ class Test:
         # time complexity:O(1)
         lenth = len(linkedlist)
         print(lenth)
-
 
 
 if __name__ == '__main__':
