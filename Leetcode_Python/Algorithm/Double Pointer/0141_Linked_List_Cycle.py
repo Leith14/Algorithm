@@ -4,17 +4,19 @@ class ListNode:
         self.val = x
         self.next = None
 
+
 class Solution:
     # Time complexity: O(N)
     # Space complexity: O(1)
     def hasCycle(self, head: ListNode) -> bool:
-        if head is None:
-            return False
+        if head is None: return False
         slow = head
         fast = head
         while fast is not None and fast.next is not None:
-            fast = fast.next.next
-            slow = slow.next
+            slow = head.next
+            fast = head.next.next
             if slow == fast:
                 return True
         return False
+
+
