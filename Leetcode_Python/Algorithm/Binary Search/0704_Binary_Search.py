@@ -13,7 +13,8 @@ class Solution:
         l = 0
         r = len(nums) - 1
         while l <= r:  # 如果不加=,这个[5],这个testcase会报错
-            mid = l + (r - l) // 2  # l + (r - l)为了不超出整数边界
+            # l + (r - l)为了不超出整数边界，因为直接l+r/2,l+r有可能会超出int范围
+            mid = l + (r - l) // 2
             if target == nums[mid]:
                 return mid
             elif target > nums[mid]:
